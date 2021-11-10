@@ -1,0 +1,8 @@
+- title: README
+  file: /README
+- title: Extract Purview Assets
+  file: /ExtractAssetDetails
+- title: Setup
+  file: /Setup
+- title: UpdateAssetLeveMetadata
+  file: /UpdateAssetLeveMetadata
