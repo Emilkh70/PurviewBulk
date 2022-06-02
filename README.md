@@ -21,8 +21,8 @@ This will generate 2 files, one with asset level details and another with column
 
 2- Generate a PowerShell script of CLI commands and paylod files to update Purview assets (**Notebook: UpdateAssetLevelMetadata**)
 
-Previously Extracted CSV from above or any other CSV in this format, can be further enriched with a Pipe separated (configurable) business glossary **formal names** and asset description. This notebook will use the enriched file to generate 2 PowerShell scripts. One will update asset description and the other one will update business glossary terms assignment.
-Once UpdateAssetLevelMetadata notebook is run, by default a folder willl be created with this pattern ```{PurviewAccountName}_update``` which will host the PowerShell files along with all required .json payload files.
+Previously Extracted CSV from above or any other CSV in this format, can be further enriched with a Pipe separated (configurable) business glossary **formal names**, asset description and classifications. This notebook will use the enriched file to generate 3 PowerShell scripts. One will update asset description and the other 2 will update business glossary terms and classifications assignment.
+Once UpdateAssetLevelMetadata notebook is run, by default a folder will be created with this pattern ```{PurviewAccountName}_update``` which will host the PowerShell files along with all required .json payload files.
 For safty reasons PowerShell files will have .ps1_ and will have to be renamed to .ps1.\
 The PowerShell file will include lines to set the environment variables which it read from .env file except for AZURE_CLIENT_SECRET. This value will have to be populated before the script can run.\
 **This will not remove existing term assignments but will overwrite desction for assets**\
