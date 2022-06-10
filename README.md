@@ -1,4 +1,4 @@
-## This project contains sample utility notebooks/scripts for performing batch operations in Azure Purview. 
+## This project contains sample utility notebooks/scripts for performing batch operations in Microsoft Purview. 
 ### This code is provided **As Is**
 ---
 ### **Dependancy:**
@@ -23,9 +23,9 @@ This will generate 2 files, one with asset level details and another with column
 
 Previously Extracted CSV from above or any other CSV in this format, can be further enriched with a Pipe separated (configurable) business glossary **formal names**, asset description and classifications. This notebook will use the enriched file to generate 3 PowerShell scripts. One will update asset description and the other 2 will update business glossary terms and classifications assignment.
 Once UpdateAssetLevelMetadata notebook is run, by default a folder will be created with this pattern ```{PurviewAccountName}_update``` which will host the PowerShell files along with all required .json payload files.
-For safty reasons PowerShell files will have .ps1_ and will have to be renamed to .ps1.\
+For safty reasons PowerShell files will have .ps1_ and will have to be renamed to .ps1.
 The PowerShell file will include lines to set the environment variables which it read from .env file except for AZURE_CLIENT_SECRET. This value will have to be populated before the script can run.\
-**This will not remove existing term assignments but will overwrite desction for assets**\
+**This will not remove existing term assignments but will overwrite desction for assets**
 
 --
 
