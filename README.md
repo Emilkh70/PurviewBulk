@@ -25,7 +25,7 @@ Previously Extracted CSV from above or any other CSV in this format, can be furt
 Once UpdateAssetLevelMetadata notebook is run, by default a folder will be created with this pattern ```{PurviewAccountName}_update``` which will host the PowerShell files along with all required .json payload files.
 For safty reasons PowerShell files will have .ps1_ and will have to be renamed to .ps1.
 The PowerShell file will include lines to set the environment variables which it read from .env file except for AZURE_CLIENT_SECRET. This value will have to be populated before the script can run.\
-**This will not remove existing term assignments but will overwrite desction for assets**
+**This will not remove existing term assignments but will overwrite description for assets**
 
 --
 
