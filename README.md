@@ -8,7 +8,8 @@
 ### **Current functionality:**
 
 1- Extract the following asset details from Purview into CSV files: (**Notebook: Extract Purview Assets**)
-This will generate 2 files, one with asset level details and another with column level details. The second file takes longer time to generate. If you do not need this level of detail, skip this step.  
+If extract_schema_level_details is False, the export file will have data only at the asset level. If extract_schema_level_details is True, the file will contain rows for each asset and if the asset has a schema, the details of schema will be populated after asset row. 
+This will take a considerably longer time to generate.  
 
 - name
 - qualifiedName
@@ -16,7 +17,6 @@ This will generate 2 files, one with asset level details and another with column
 - term (Pipe separated) (configurable)
 - description
 - entityType
-- assetType
 - id (Guid)
 
 2- Generate a PowerShell script of CLI commands and paylod files to update Purview assets (**Notebook: UpdateAssetLevelMetadata**)
