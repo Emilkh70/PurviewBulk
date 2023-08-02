@@ -18,6 +18,7 @@ This will take a considerably longer time to generate.
 - description
 - entityType
 - id (Guid)
+- certifiedBy
 
 2- Generate a PowerShell script of CLI commands and paylod files to update Purview assets (**Notebook: UpdateAssetLevelMetadata**)
 
